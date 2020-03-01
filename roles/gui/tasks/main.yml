@@ -1,0 +1,6 @@
+---
+- name: install gui packages
+  become: yes
+  with_items: "{{ gui_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

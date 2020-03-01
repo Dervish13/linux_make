@@ -1,0 +1,6 @@
+---
+- name: install common packages
+  become: yes
+  with_items: "{{ common_packages }}"
+  pkgng:
+    name: "{{ item.name }}"

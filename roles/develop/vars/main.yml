@@ -1,0 +1,6 @@
+---
+develop_packages:
+  - name: python
+  - name: tmux
+  - name: vim
+  - name: neovim
